@@ -1,0 +1,41 @@
+body {
+  background-color: #EEEEEE;
+}
+.container {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 50px 1fr;
+  
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  grid-row: 1;
+  grid-column: 1/-1;
+  border: 1px solid black;
+}
+
+.home-page {
+
+}
+
+.about-me {
+  grid-row: 2 / -1;
+  grid-column:1;
+  border: 1px solid black
+}
+
+.bio {
+  grid-column:2;
+  border: 1px solid black
+
+}
+
+.feature {
+  grid-column:2;
+  border: 1px solid black
+
+}

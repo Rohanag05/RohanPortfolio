@@ -57,3 +57,19 @@ body {
   border: 1px solid black
 
 }
+
+span {
+  color: #2563eb;
+  font-weight: 600;
+  display: inline-block;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5px);
+  }
+}

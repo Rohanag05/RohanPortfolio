@@ -53,12 +53,10 @@ body {
 
 
 
-
-
 .about-me {
   grid-row: 2 / -1;
   grid-column:2;
-  border: 1px solid black
+  margin-top: 1rem;
 }
 
 .bio {
@@ -81,7 +79,7 @@ p span {
   color: #00a6fb;
   font-weight: 600;
   display: inline-block;
-  animation: bounce 1.8s ease-in-out infinite;
+  animation: bounce 1.6s ease-in-out infinite;
   font-weight: bold;
 }
 
@@ -90,7 +88,34 @@ p span {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-0.75px);
+    transform: translateY(-0.85px);
   }
 
   }
+
+
+.me {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .me {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .me {
+    width: 90px;
+    height: 90px;
+  }
+}

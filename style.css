@@ -52,10 +52,12 @@ body {
 }
 
 
-
+.bio, .feature {
+  margin-left: 15rem;
+}
 
 .bio {
-  margin-left: 1rem;
+
   grid-row: 2;
   grid-column:1;
 
@@ -63,7 +65,7 @@ body {
 }
 
 .feature {
-  margin-left: 1rem;
+  
   grid-row: 3;
   grid-column:1;
 
@@ -74,20 +76,25 @@ p span {
   color: #00a6fb;
   font-weight: 600;
   display: inline-block;
-  animation: bounce 1.6s ease-in-out infinite;
+  animation: bounce 1.4s ease-in-out infinite;
   font-weight: bold;
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%, 50%, 100% {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(-0.85px);
+  25% {
+    transform: translateY(1px);
+  }
+  75% {
+    transform: translateY(-1px);
+
   }
 
   }
 .about-me {
+  padding-top: 0.25rem;
   
   grid-row: 2 / -1;
   grid-column:2;

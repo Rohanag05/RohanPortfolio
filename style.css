@@ -2,27 +2,46 @@ body {
   margin: 0;
   background-color: f4f1de;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 0.25fr ;
+  grid-template-columns: 1fr 0.5fr ;
   grid-template-rows: 50px  1fr ;
   gap: 0.1rem
   
 }
 
-.heading  {
+.heading {
+  
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
   gap: 3rem;
+  justify-content: flex-end;
+
   grid-row: 1;
-  grid-column: 1/-1;
-  border-bottom: 1px solid black;
-  padding: 1rem;
-  padding-left: 3%;
+  grid-column: 1 / -1;
+
+  padding: 1.25rem 3%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #334155;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.heading span {
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.heading span:hover {
+  color: #00a6fb;
+  transform: translateY(-2px) scale(1.05);
 }
 
 .home-page a, .project a{
@@ -32,15 +51,9 @@ body {
 
 }
 
-.home-page a:hover {
-  color: #6594B1;
-  border-bottom: 2px solid #6594B1;
-}
-.project a:hover {
-  color: #6594B1;
-  border-bottom: 2px solid #6594B1;
 
-}
+
+
 
 .about-me {
   grid-row: 2 / -1;
@@ -64,12 +77,12 @@ body {
 
 }
 
-span {
-  color: #2563eb;
+p span {
+  color: #00a6fb;
   font-weight: 600;
   display: inline-block;
-  animation: bounce 1s ease-in-out infinite;
-  font-size: 14px;
+  animation: bounce 1.8s ease-in-out infinite;
+  font-weight: bold;
 }
 
 @keyframes bounce {
@@ -79,4 +92,5 @@ span {
   50% {
     transform: translateY(-0.75px);
   }
-}
+
+  }

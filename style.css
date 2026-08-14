@@ -53,11 +53,6 @@ body {
 
 
 
-.about-me {
-  grid-row: 2 / -1;
-  grid-column:2;
-  margin-top: 1rem;
-}
 
 .bio {
   margin-left: 1rem;
@@ -92,7 +87,34 @@ p span {
   }
 
   }
+.about-me {
+  
+  grid-row: 2 / -1;
+  grid-column:2;
 
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: "Inter";
+  color: #76808e;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
 
 .me {
   width: 150px;
@@ -104,18 +126,29 @@ p span {
 
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
   .me {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
+  .icon {
+    width: 18px;
+    height: 18px;
+
+  }
+ 
 }
 
-/* Phone */
+
 @media (max-width: 480px) {
   .me {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
+  }
+  .icon {
+    width: 18px;
+    height: 18px;
+
   }
 }

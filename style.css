@@ -54,7 +54,7 @@ body {
 
 
 .bio, .feature {
-  margin-left: 15rem;
+  margin-left: 5.5rem;
 }
 
 .bio {
@@ -92,6 +92,7 @@ p span {
     transform: translateY(-1px);
 
   }
+ 
 
   }
 .about-me {
@@ -135,7 +136,10 @@ p span {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
+  .bio, .feature {
+    margin-left: 15rem;
+  }
   .me {
     width: 100px;
     height: 100px;
@@ -149,7 +153,20 @@ p span {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
+  .about-me {
+    grid-row: 2;
+    grid-column: 1/-1;
+
+  }
+  .bio {
+    grid-row: 3;
+    grid-column: 1/-1;
+  }
+  .feature {
+    grid-row: 4;
+    grid-column: 1/-1;
+  }
   .me {
     width: 100px;
     height: 100px;
@@ -158,5 +175,9 @@ p span {
     width: 18px;
     height: 18px;
 
+  }
+  .bio, .feature {
+    margin-left: 1.75rem;
+    margin-right:1.75rem;
   }
 }
